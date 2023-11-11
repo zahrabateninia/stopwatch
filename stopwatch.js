@@ -9,7 +9,11 @@ function Stopwatch(){
     this.reset()= function(){
 
     };
-  
+
+    Object.defineProperty(this, 'duration', {
+        get : function() {
+            return duration; }
+    });
 
 };
 
