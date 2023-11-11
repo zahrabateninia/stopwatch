@@ -11,7 +11,8 @@ function Stopwatch(){
             throw new Error("The stopwatch is not running");
         running = false;
         endTime = new Date();
-
+        const seconds = (endTime.getTime() - startTime.getTime()) / 1000; // convert milliseconds to seconds
+        duration += seconds;
     };
     this.reset()= function(){
 
