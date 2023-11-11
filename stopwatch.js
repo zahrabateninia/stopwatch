@@ -15,6 +15,10 @@ function Stopwatch(){
         duration += seconds;
     };
     this.reset()= function(){
+        startTime= null;
+        endTime= null;
+        running=false;
+        duration= 0;
 
     };
 
